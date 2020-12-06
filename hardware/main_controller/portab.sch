@@ -87,4 +87,20 @@ Wire Wire Line
 	6500 2300 6100 2300
 Wire Wire Line
 	6100 2400 6500 2400
+Wire Wire Line
+	6100 1200 6500 1200
+Wire Wire Line
+	6100 1300 6500 1300
+Wire Wire Line
+	6100 1400 6500 1400
+Wire Wire Line
+	6100 1500 6500 1500
+Text GLabel 6500 1200 2    50   Input ~ 0
+LED1
+Text GLabel 6500 1300 2    50   Input ~ 0
+LED2
+Text GLabel 6500 1400 2    50   Input ~ 0
+LED3
+Text GLabel 6500 1500 2    50   Input ~ 0
+LED4
 $EndSCHEMATC
