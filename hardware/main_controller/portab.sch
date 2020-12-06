@@ -24,13 +24,9 @@ F 3 "" H 3300 2000 50  0000 C CNN
 	1    3300 2000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 2300 7000 2300
-Wire Wire Line
-	6100 2400 7000 2400
-Text GLabel 7000 2300 2    50   Input ~ 0
+Text GLabel 6500 2300 2    50   Input ~ 0
 STM_DM
-Text GLabel 7000 2400 2    50   Input ~ 0
+Text GLabel 6500 2400 2    50   Input ~ 0
 STM_DP
 $Comp
 L stm32:STM32F407V(E-G)Tx_u U?
@@ -67,4 +63,28 @@ Wire Wire Line
 	6300 3450 6800 3450
 Text GLabel 6800 3450 2    50   Input ~ 0
 BOOT1
+Wire Wire Line
+	6300 3850 6800 3850
+Wire Wire Line
+	6300 3950 6800 3950
+Text GLabel 6800 3850 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 6800 3950 2    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	6100 1700 6500 1700
+Wire Wire Line
+	6100 1800 6500 1800
+Wire Wire Line
+	6500 1900 6100 1900
+Text GLabel 6500 1700 2    50   Input ~ 0
+SPI_SCK
+Text GLabel 6500 1800 2    50   Input ~ 0
+SPI_MISO
+Text GLabel 6500 1900 2    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	6500 2300 6100 2300
+Wire Wire Line
+	6100 2400 6500 2400
 $EndSCHEMATC

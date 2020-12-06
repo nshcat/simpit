@@ -16,8 +16,8 @@ $EndDescr
 $Sheet
 S 700  700  850  250 
 U 5FD5037D
-F0 "Port D" 50
-F1 "portd.sch" 50
+F0 "Port D/E" 50
+F1 "portde.sch" 50
 $EndSheet
 $Sheet
 S 700  1200 850  250 
@@ -110,4 +110,99 @@ Wire Notes Line
 	7150 1450 5300 1450
 Wire Notes Line
 	5300 1450 5300 500 
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FDADA32
+P 4150 1300
+F 0 "SW?" H 4150 1585 50  0000 C CNN
+F 1 "SW_Push" H 4150 1494 50  0000 C CNN
+F 2 "" H 4150 1500 50  0001 C CNN
+F 3 "~" H 4150 1500 50  0001 C CNN
+	1    4150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDAEBDA
+P 4500 1050
+F 0 "R?" H 4570 1096 50  0000 L CNN
+F 1 "R" H 4570 1005 50  0000 L CNN
+F 2 "" V 4430 1050 50  0001 C CNN
+F 3 "~" H 4500 1050 50  0001 C CNN
+	1    4500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FDAF4B5
+P 4500 1550
+F 0 "C?" H 4615 1596 50  0000 L CNN
+F 1 "C" H 4615 1505 50  0000 L CNN
+F 2 "" H 4538 1400 50  0001 C CNN
+F 3 "~" H 4500 1550 50  0001 C CNN
+	1    4500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FDB11D7
+P 4500 850
+F 0 "#PWR?" H 4500 700 50  0001 C CNN
+F 1 "+3V3" H 4515 1023 50  0000 C CNN
+F 2 "" H 4500 850 50  0001 C CNN
+F 3 "" H 4500 850 50  0001 C CNN
+	1    4500 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDB17E5
+P 4500 1750
+F 0 "#PWR?" H 4500 1500 50  0001 C CNN
+F 1 "GND" H 4505 1577 50  0000 C CNN
+F 2 "" H 4500 1750 50  0001 C CNN
+F 3 "" H 4500 1750 50  0001 C CNN
+	1    4500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1200 4500 1300
+Wire Wire Line
+	4500 1300 4350 1300
+Wire Wire Line
+	4500 1300 4500 1400
+Connection ~ 4500 1300
+Wire Wire Line
+	4500 900  4500 850 
+Wire Wire Line
+	4500 1750 4500 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5FDB4F7C
+P 3850 1400
+F 0 "#PWR?" H 3850 1150 50  0001 C CNN
+F 1 "GND" H 3855 1227 50  0000 C CNN
+F 2 "" H 3850 1400 50  0001 C CNN
+F 3 "" H 3850 1400 50  0001 C CNN
+	1    3850 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1300 3850 1300
+Wire Wire Line
+	3850 1300 3850 1400
+Wire Wire Line
+	4500 1300 4850 1300
+Text GLabel 4850 1300 2    50   Input ~ 0
+RESET
+Wire Notes Line
+	5200 500  3400 500 
+Wire Notes Line
+	3400 500  3400 2000
+Wire Notes Line
+	3400 2000 5200 2000
+Wire Notes Line
+	5200 2000 5200 500 
+Text Notes 3950 650  2    50   ~ 0
+Reset Button
 $EndSCHEMATC
