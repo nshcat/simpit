@@ -103,4 +103,8 @@ Text GLabel 6500 1400 2    50   Input ~ 0
 LED3
 Text GLabel 6500 1500 2    50   Input ~ 0
 LED4
+Wire Wire Line
+	6100 2100 6500 2100
+Text GLabel 6500 2100 2    50   Input ~ 0
+VBUS_DETECT
 $EndSCHEMATC
