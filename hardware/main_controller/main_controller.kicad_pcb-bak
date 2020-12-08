@@ -541,7 +541,7 @@
   )
 
   (module Capacitor_SMD:C_0201_0603Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5FD082C3)
-    (at 120.65 93.98)
+    (at 120.765001 -26.464999)
     (descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5FD18C56/5FD8495A)

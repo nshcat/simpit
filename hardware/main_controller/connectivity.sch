@@ -111,10 +111,6 @@ $EndComp
 Wire Wire Line
 	900  3850 900  4000
 Connection ~ 900  3850
-Text GLabel 1450 3450 2    50   Input ~ 0
-USB_DP
-Text GLabel 1450 3550 2    50   Input ~ 0
-USB_DM
 $Comp
 L Device:R R5
 U 1 1 5FD252DA
@@ -490,7 +486,7 @@ U 1 1 5FDD6B0E
 P 8200 4350
 F 0 "JP3" V 8154 4398 50  0000 L CNN
 F 1 "JMP_CAN_TERM" V 8245 4398 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8200 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8200 4350 50  0001 C CNN
 F 3 "~" H 8200 4350 50  0001 C CNN
 	1    8200 4350
 	0    1    1    0   
@@ -1017,7 +1013,7 @@ U 1 1 600DD349
 P 7600 3700
 F 0 "JP2" H 7600 3885 50  0000 C CNN
 F 1 "JMP_CAN_PWR" H 7600 3794 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7600 3700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 3700 50  0001 C CNN
 F 3 "~" H 7600 3700 50  0001 C CNN
 	1    7600 3700
 	1    0    0    -1  
@@ -1248,7 +1244,7 @@ U 1 1 5FE3ACB8
 P 4850 1450
 F 0 "JP4" V 4804 1498 50  0000 L CNN
 F 1 "JMP_USB_PU" V 4895 1498 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4850 1450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4850 1450 50  0001 C CNN
 F 3 "~" H 4850 1450 50  0001 C CNN
 	1    4850 1450
 	0    1    1    0   
@@ -1394,7 +1390,7 @@ U 1 1 5FD5060F
 P 3950 2700
 F 0 "JP1" V 3904 2767 50  0000 L CNN
 F 1 "JMP_USB_PWR" V 3995 2767 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3950 2700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3950 2700 50  0001 C CNN
 F 3 "~" H 3950 2700 50  0001 C CNN
 	1    3950 2700
 	0    1    1    0   
@@ -1425,4 +1421,8 @@ Wire Wire Line
 	3950 2400 3850 2400
 Wire Wire Line
 	3450 2400 3550 2400
+Text GLabel 1450 3450 2    50   Input ~ 0
+DP
+Text GLabel 1450 3550 2    50   Input ~ 0
+DM
 $EndSCHEMATC

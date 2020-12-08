@@ -116,17 +116,6 @@ F 3 "~" H 1400 2460 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J13
-U 1 1 5FE125BC
-P 1200 3100
-F 0 "J13" H 1118 2775 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1118 2866 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1200 3100 50  0001 C CNN
-F 3 "~" H 1200 3100 50  0001 C CNN
-	1    1200 3100
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+5V #PWR037
 U 1 1 5FE13319
 P 1850 2300
@@ -141,31 +130,17 @@ Wire Wire Line
 	1850 2300 1850 2400
 Wire Wire Line
 	1850 2400 1650 2400
-Wire Wire Line
-	1400 3000 1850 3000
-Wire Wire Line
-	1850 3000 1850 2400
-Connection ~ 1850 2400
 $Comp
 L power:GND #PWR036
 U 1 1 5FE1482E
-P 1750 3250
-F 0 "#PWR036" H 1750 3000 50  0001 C CNN
-F 1 "GND" H 1755 3077 50  0000 C CNN
-F 2 "" H 1750 3250 50  0001 C CNN
-F 3 "" H 1750 3250 50  0001 C CNN
-	1    1750 3250
+P 1850 2750
+F 0 "#PWR036" H 1850 2500 50  0001 C CNN
+F 1 "GND" H 1855 2577 50  0000 C CNN
+F 2 "" H 1850 2750 50  0001 C CNN
+F 3 "" H 1850 2750 50  0001 C CNN
+	1    1850 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 2600 1750 2600
-Wire Wire Line
-	1750 2600 1750 3100
-Wire Wire Line
-	1400 3100 1750 3100
-Connection ~ 1750 3100
-Wire Wire Line
-	1750 3100 1750 3250
 Wire Notes Line
 	550  2000 2050 2000
 Wire Notes Line
@@ -186,4 +161,8 @@ Wire Notes Line
 	2050 550  2050 1850
 Text Notes 600  700  0    89   ~ 0
 Voltage Regulator
+Wire Wire Line
+	1850 2600 1850 2750
+Wire Wire Line
+	1650 2600 1850 2600
 $EndSCHEMATC
